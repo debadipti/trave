@@ -10,6 +10,29 @@ body {
   width: 100%;
 }
 
+.accent-color {
+  color: #37b721;
+}
+
+.accent-color-sec {
+  color: #f17d37;
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.para {
+  color: #999;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 .btn {
   all: unset;
   cursor: pointer;
@@ -27,6 +50,72 @@ body {
   background-color: #3ac023;
 }
 
+.input {
+  margin: 0.4em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input span i {
+  padding: 0.34rem 0.25rem 0.38rem 0.6rem;
+  border: 1px solid #ccc;
+  color: #ccc;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: none;
+}
+
+.input input {
+  width: 200px;
+  padding: 0.43rem 0.6rem;
+  font-size: 1.2rem;
+  color: #999;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 2rem;
+  }
+  50% {
+    bottom: 3rem;
+  }
+  100% {
+    bottom: 2rem;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 2rem;
+  }
+  50% {
+    bottom: 3rem;
+  }
+  100% {
+    bottom: 2rem;
+  }
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -41,6 +130,7 @@ header .navigation {
   padding-left: 1rem;
   padding-right: 1rem;
   padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,10 +154,11 @@ header .navigation .phone p {
           align-items: center;
   padding: 0.6rem;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 header .navigation .phone p i {
+  font-size: 0.9rem;
   margin-right: 6px;
 }
 
@@ -110,6 +201,7 @@ header .hero-text {
 }
 
 header .hero-text span {
+  font-size: 0.8em;
   color: #fff;
   position: absolute;
   right: 2.5rem;
@@ -164,5 +256,83 @@ header .video-play a .wrap h2 {
 
 header .video-play:hover {
   opacity: 0.9;
+}
+
+header #expand {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  font-size: 2rem;
+  -webkit-animation: bounce 1.5s;
+          animation: bounce 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.main {
+  padding: 4rem 0;
+}
+
+.main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .wrapper .left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.main .wrapper .left img {
+  width: 100%;
+}
+
+.main .wrapper .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-left: 1rem;
+}
+
+.location {
+  padding: 4rem 0;
+}
+
+.location .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location .wrapper .left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.location .wrapper .left .input {
+  margin-top: 2.5rem;
+}
+
+.location .wrapper .right {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  position: relative;
+}
+
+.location .wrapper .right h1 {
+  font-size: 10rem;
+  position: absolute;
+  right: 0;
+  top: -4rem;
+  color: #fbfbfb;
 }
 /*# sourceMappingURL=main.css.map */
