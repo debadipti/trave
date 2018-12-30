@@ -302,7 +302,7 @@ header #expand {
 }
 
 .location {
-  padding: 4rem 0;
+  padding: 4rem 0 2rem;
 }
 
 .location .wrapper {
@@ -315,10 +315,6 @@ header #expand {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-}
-
-.location .wrapper .left .input {
-  margin-top: 2.5rem;
 }
 
 .location .wrapper .right {
@@ -334,5 +330,104 @@ header #expand {
   right: 0;
   top: -4rem;
   color: #fbfbfb;
+}
+
+.city {
+  padding: 2rem 0 2rem;
+}
+
+.city .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.city .wrapper .search {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.city .wrapper .city-list {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.city .wrapper .city-list ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+}
+
+.city .wrapper .city-list ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.city .wrapper .city-list ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.city .wrapper .city-list ul li a:hover {
+  color: #f17d37;
+}
+
+.destination {
+  padding: 2rem 0 4rem;
+}
+
+.destination .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.destination .wrapper .dest {
+  display: block;
+  text-decoration: none;
+  opacity: 0.9;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: relative;
+}
+
+.destination .wrapper .dest:not(:last-child) {
+  margin-right: 0.7rem;
+}
+
+.destination .wrapper .dest img {
+  width: 100%;
+}
+
+.destination .wrapper .dest:hover {
+  opacity: 1;
+}
+
+.destination .wrapper .dest .text {
+  z-index: 2;
+  position: absolute;
+  bottom: 1.4rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.destination .wrapper .dest .text p {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.destination .wrapper .dest .text span {
+  color: #fff;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=main.css.map */

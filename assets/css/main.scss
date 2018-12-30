@@ -239,14 +239,11 @@ header {
 
 // location
 .location {
-  padding: 4rem 0;
+  padding: 4rem 0 2rem;
   .wrapper {
     display: flex;
     .left {
       flex: 3;
-      .input {
-        margin-top: 2.5rem;
-      }
     }
     .right {
       flex: 4;
@@ -257,6 +254,81 @@ header {
         right: 0;
         top: -4rem;
         color: #fbfbfb;
+      }
+    }
+  }
+}
+
+// cities
+.city {
+  padding: 2rem 0 2rem;
+  .wrapper {
+    display: flex;
+    .search {
+      flex: 2;
+    }
+    .city-list {
+      flex: 3;
+      margin-top: 1rem;
+      display: flex;
+      ul {
+        flex: 1;
+        list-style: none;
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+          a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #999;
+            &:hover {
+              color: #f17d37;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// destination showcase
+.destination {
+  padding: 2rem 0 4rem;
+  .wrapper {
+    display: flex;
+    .dest {
+      display: block;
+      text-decoration: none;
+      opacity: 0.9;
+      transition: 1s;
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 0.7rem;
+      }
+      img {
+        width: 100%;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      .text {
+        z-index: 2;
+        position: absolute;
+        bottom: 1.4rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        p {
+          font-size: 1.3rem;
+          color: #fff;
+          text-align: center;
+          margin-bottom: 0.4rem;
+        }
+        span {
+          color: #fff;
+          font-size: 0.9rem;
+        }
       }
     }
   }
