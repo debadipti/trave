@@ -226,13 +226,14 @@ header {
     align-items: center;
     .left {
       flex: 3;
+      padding: 0 1rem;
       img {
         width: 100%;
       }
     }
     .right {
       flex: 2;
-      padding-left: 1rem;
+      padding: 0 1rem;
     }
   }
 }
@@ -361,8 +362,8 @@ header {
     }
     .count {
       display: flex;
-      padding: 2.5rem 0 0;
-      max-width: 60%;
+      padding: 3rem 0 1rem;
+      max-width: 70%;
       margin: auto;
       .flex {
         flex: 1;
@@ -371,6 +372,76 @@ header {
           color: #f17d37;
           margin-bottom: 0.3rem;
         }
+      }
+    }
+  }
+}
+
+// testimonial
+.testimonial {
+  padding: 4rem;
+  .wrapper {
+    .testimonial-single {
+      text-align: center;
+      max-width: 46rem;
+      margin: 0 auto;
+      .head {
+        font-size: 10rem;
+        color: lightgray;
+        line-height: 1;
+        opacity: 0.4;
+      }
+      .lead {
+        font-size: 1.4rem;
+        margin-top: -3rem;
+        margin-bottom: 1.2rem;
+        color: #777;
+      }
+      .user {
+        padding: 1rem 0 0;
+        img {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          opacity: 0.8;
+        }
+        span.name {
+          display: block;
+          margin-top: 1rem;
+          font-size: 1rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #bbbbbb;
+        }
+      }
+    }
+  }
+}
+
+// call-to-action
+.cta {
+  padding: 3rem;
+  background-color: #37b721;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    span {
+      flex: 1;
+      color: #fff;
+      font-size: 1.4rem;
+    }
+    .cta-btn {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 40px;
+      &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.1);
       }
     }
   }
