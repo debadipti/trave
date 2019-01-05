@@ -503,7 +503,7 @@ header #expand {
 }
 
 .testimonial .wrapper .testimonial-single .user {
-  padding: 1rem 0 0;
+  padding: 1rem 0 2rem;
 }
 
 .testimonial .wrapper .testimonial-single .user img {
@@ -558,5 +558,62 @@ header #expand {
 
 .cta .wrapper .cta-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .wrapper {
+  padding: 4rem 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .wrapper .ft-flex-item h3 {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #777;
+}
+
+footer .wrapper .ft-flex-item ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer .wrapper .ft-flex-item ul li {
+  margin-bottom: 1rem;
+}
+
+footer .wrapper .ft-flex-item ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #a8a8a8;
+  font-size: 1rem;
+}
+
+footer .wrapper .ft-flex-item ul li a:hover {
+  color: #777;
+}
+
+footer .wrapper .ft-flex-item:not(:last-child) {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+footer .wrapper .ft-flex-item:last-child {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+footer .copyright {
+  padding: 0 0 4rem;
+}
+
+footer .copyright p {
+  width: 100%;
+  text-align: right;
+  font-size: 1.2rem;
+  color: lightgray;
 }
 /*# sourceMappingURL=main.css.map */
