@@ -118,7 +118,7 @@ body {
 
 header {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   position: relative;
   background: url(../img/hero.jpeg) no-repeat center center/cover;
 }
@@ -615,5 +615,123 @@ footer .copyright p {
   text-align: right;
   font-size: 1.2rem;
   color: lightgray;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 99%;
+  }
+  .main {
+    padding: 3rem 0 2rem;
+  }
+  .main .wrapper {
+    display: block;
+  }
+  .main .wrapper .left,
+  .main .wrapper .right {
+    padding: 1rem;
+  }
+  .location {
+    padding: 2rem 0 2rem;
+  }
+  .location .wrapper {
+    display: block;
+  }
+  .location .wrapper .left,
+  .location .wrapper .right {
+    padding: 0 1rem;
+  }
+  .location .wrapper .right h1 {
+    display: none;
+  }
+  .city .wrapper {
+    display: block;
+  }
+  .city .wrapper .search {
+    padding: 0 1rem;
+  }
+  .city .wrapper .city-list {
+    padding: 0 1rem;
+    margin-top: 2rem;
+  }
+  .city .wrapper .city-list ul li a {
+    font-size: 0.9rem;
+  }
+  .destination {
+    padding: 2rem 0;
+  }
+  .destination .wrapper {
+    display: block;
+  }
+  .destination .wrapper .dest {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .destination .wrapper .dest:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .destination .wrapper .dest .overlay {
+    height: 98%;
+  }
+  .stat {
+    padding: 2rem 0;
+  }
+  .stat .wrapper .count {
+    padding: 1rem 0;
+    display: block;
+  }
+  .stat .wrapper .count .flex {
+    padding-bottom: 1rem;
+  }
+  .stat .wrapper .count .flex h1 {
+    font-size: 2rem;
+  }
+  .testimonial {
+    padding: 2rem 0;
+  }
+  .testimonial .wrapper .testimonial-single {
+    padding: 0 1rem;
+  }
+  .testimonial .wrapper .testimonial-single .head {
+    font-size: 6rem;
+  }
+  .testimonial .wrapper .testimonial-single .user {
+    padding: 1rem;
+  }
+  .testimonial .wrapper .testimonial-single .user .name {
+    font-size: 0.8rem !important;
+  }
+  .cta {
+    padding: 2rem 0;
+  }
+  .cta .wrapper {
+    display: block;
+    text-align: center;
+  }
+  .cta .wrapper span {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .cta .wrapper a.cta-btn {
+    display: inline-block;
+  }
+  footer .wrapper {
+    display: block;
+    padding: 2rem 0;
+  }
+  footer .wrapper .ft-flex-item {
+    padding: 0 1rem;
+  }
+  footer .wrapper .ft-flex-item:not(:last-child) {
+    display: none;
+  }
+  footer .copyright {
+    padding: 1rem 0;
+  }
+  footer .copyright p {
+    text-align: center;
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -103,7 +103,7 @@ body {
 // header
 header {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   position: relative;
   background: url(../img/hero.jpeg) no-repeat center center/cover;
   .navigation {
@@ -490,6 +490,135 @@ footer {
       text-align: right;
       font-size: 1.2rem;
       color: lightgray;
+    }
+  }
+}
+
+// media queries
+@media (max-width: 768px) {
+  .wrapper {
+    width: 99%;
+  }
+  .main {
+    padding: 3rem 0 2rem;
+    .wrapper {
+      display: block;
+      .left,
+      .right {
+        padding: 1rem;
+      }
+    }
+  }
+  .location {
+    padding: 2rem 0 2rem;
+    .wrapper {
+      display: block;
+      .left,
+      .right {
+        padding: 0 1rem;
+      }
+      .right {
+        h1 {
+          display: none;
+        }
+      }
+    }
+  }
+  .city {
+    .wrapper {
+      display: block;
+      .search {
+        padding: 0 1rem;
+      }
+      .city-list {
+        padding: 0 1rem;
+        margin-top: 2rem;
+        ul li a {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .destination {
+    padding: 2rem 0;
+    .wrapper {
+      display: block;
+      .dest {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+        .overlay {
+          height: 98%;
+        }
+      }
+    }
+  }
+  .stat {
+    padding: 2rem 0;
+    .wrapper {
+      .count {
+        padding: 1rem 0;
+        display: block;
+        .flex {
+          padding-bottom: 1rem;
+          h1 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .testimonial {
+    padding: 2rem 0;
+    .wrapper {
+      .testimonial-single {
+        padding: 0 1rem;
+        .head {
+          font-size: 6rem;
+        }
+        .user {
+          padding: 1rem;
+          .name {
+            font-size: 0.8rem !important;
+          }
+        }
+      }
+    }
+  }
+  .cta {
+    padding: 2rem 0;
+    .wrapper {
+      display: block;
+      text-align: center;
+      span {
+        display: block;
+        margin-bottom: 2rem;
+      }
+      a.cta-btn {
+        display: inline-block;
+      }
+    }
+  }
+  footer {
+    .wrapper {
+      display: block;
+      padding: 2rem 0;
+      .ft-flex-item {
+        padding: 0 1rem;
+        &:not(:last-child) {
+          display: none;
+        }
+      }
+    }
+    .copyright {
+      padding: 1rem 0;
+      p {
+        text-align: center;
+        font-size: 1rem;
+      }
     }
   }
 }
