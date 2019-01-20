@@ -92,6 +92,14 @@ body {
   padding-right: 1rem;
 }
 
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
 @-webkit-keyframes bounce {
   0% {
     bottom: 2rem;
@@ -118,7 +126,7 @@ body {
 
 header {
   width: 100%;
-  height: calc(100vh - 3rem);
+  height: calc(100vh);
   position: relative;
   background: url(../img/hero.jpeg) no-repeat center center/cover;
 }
@@ -173,7 +181,15 @@ header .navigation .phone p a:hover {
   opacity: 0.9;
 }
 
-header .navigation nav a {
+header .navigation nav ul.nav-links {
+  list-style: none;
+}
+
+header .navigation nav ul.nav-links li {
+  display: inline;
+}
+
+header .navigation nav ul.nav-links li a {
   display: inline-block;
   padding: 0.6rem;
   font-size: 0.8rem;
@@ -183,12 +199,21 @@ header .navigation nav a {
   color: #fff;
 }
 
-header .navigation nav a:not(:nth-child(1)) {
+header .navigation nav ul.nav-links li a:not(:nth-child(1)) {
   margin-left: 1.2rem;
 }
 
-header .navigation nav a:hover {
+header .navigation nav ul.nav-links li a:hover {
   opacity: 0.9;
+}
+
+header .navigation nav #bars {
+  display: none;
+  cursor: pointer;
+}
+
+header .navigation nav #bars i {
+  color: #fff;
 }
 
 header .hero-text {
@@ -621,6 +646,38 @@ footer .copyright p {
   .wrapper {
     width: 99%;
   }
+  header .hero-text h1 {
+    font-size: 5rem;
+  }
+  header .hero-text .btn {
+    padding: 0.8rem 1.8rem;
+  }
+  header .video-play {
+    bottom: 2.8rem;
+    left: 3.5rem;
+  }
+  header .video-play a i {
+    font-size: 2.8rem;
+  }
+  header .navigation {
+    width: 90%;
+    display: block;
+    padding: 0.6rem 0;
+  }
+  header .navigation nav ul.nav-links {
+    margin-top: 0.6rem;
+    display: none;
+  }
+  header .navigation nav ul.nav-links li {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  header .navigation nav #bars {
+    display: inline-block;
+    position: absolute;
+    right: 2.4rem;
+    top: 1.1rem;
+  }
   .main {
     padding: 3rem 0 2rem;
   }
@@ -656,23 +713,6 @@ footer .copyright p {
   }
   .city .wrapper .city-list ul li a {
     font-size: 0.9rem;
-  }
-  .destination {
-    padding: 2rem 0;
-  }
-  .destination .wrapper {
-    display: block;
-  }
-  .destination .wrapper .dest {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-  .destination .wrapper .dest:not(:last-child) {
-    margin-right: 1rem;
-  }
-  .destination .wrapper .dest .overlay {
-    height: 98%;
   }
   .stat {
     padding: 2rem 0;
@@ -732,6 +772,65 @@ footer .copyright p {
   footer .copyright p {
     text-align: center;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+  .cta .wrapper span {
+    font-size: 1.1rem;
+  }
+  .stat .wrapper .count {
+    padding-top: 2rem;
+  }
+  header .navigation nav #bars {
+    right: 1.8rem;
+    top: 1rem;
+  }
+  header .hero-text h1 {
+    font-size: 4.6rem;
+    margin-bottom: 1rem;
+  }
+  header .hero-text span {
+    font-size: 0.6rem;
+  }
+  header .hero-text .btn {
+    padding: 0.8rem 1.8rem;
+  }
+  header .video-play {
+    bottom: 1.8rem;
+    left: 2rem;
+  }
+  header .video-play a i {
+    font-size: 2rem;
+  }
+  header .video-play a .wrap span {
+    font-size: 0.6rem;
+  }
+  header .video-play a .wrap h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 766px) {
+  .destination {
+    padding: 2rem 0;
+  }
+  .destination .wrapper {
+    display: block;
+  }
+  .destination .wrapper .dest {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .destination .wrapper .dest:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .destination .wrapper .dest .overlay {
+    height: 98%;
   }
 }
 /*# sourceMappingURL=main.css.map */
